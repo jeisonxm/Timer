@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Mukta:wght@400;600&family=Roboto:ital,wght@0,500;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/10b9adabac.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Timer</title>
+  </head>
+  <body>
+    <div class="body-grid">
+      <header>
+        <nav class="header-nav">
+          <li><button></button></li>
+          <li><button></button></li>
+          <li><button></button></li>
+        </nav>
+      </header>
+      <main>
+        <section class="hero" id="principal">
+          <h1 class="hero-tittle"></h1>
+          <div class="hero-time">
+            <p id="time">
+              <span id="minutes">00</span>:<span id="seconds">00</span>.<span
+                id="miliseconds"
+                >00</span
+              >
+            </p>
+          </div>
+          <div class="hero-buttons">
+            <button onclick="startChronometer()">
+              Start <i class="fa-solid fa-play"></i>
+            </button>
+            <button onclick="stopChronometer()">
+              Stop <i class="fa-solid fa-pause"></i>
+            </button>
+            <button onclick="saveLap()">
+              Lap <i class="fa-solid fa-stopwatch"></i>
+            </button>
+            <button onclick="resetChronometer()">
+              Reset <i class="fa-solid fa-stop"></i>
+            </button>
+          </div>
+          <div class="vueltas-container" id="vueltasContainer"></div>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
